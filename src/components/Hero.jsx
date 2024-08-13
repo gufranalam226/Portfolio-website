@@ -4,6 +4,7 @@ import new_tab from "../assets/new-tab.svg"
 function Hero() {
   return (
     <Component>
+      <div class="dot-background">
       {/* hero section start here */}
         <div className='hero-container'>
           {/* hero section with max width of 1280px */}
@@ -45,7 +46,7 @@ function Hero() {
             </div>
 
         </div>
-      
+        </div>
     </Component>
   )
 }
@@ -54,6 +55,51 @@ export default Hero
 
 
 const Component = styled.div`
+
+.dot-background {
+    position: relative;
+    overflow: hidden;
+}
+
+.dot-background::before,
+.dot-background::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50px 20px, red 5px, transparent 0),
+                      
+                      radial-gradient(circle at 110px 140px, blue 7px, transparent 0),
+                     
+                      radial-gradient(circle at 110px 220px, green 12px, transparent 0);
+    background-size: 500px 300px;
+    animation: moveDots 30s linear infinite;
+}
+
+.dot-background::after {
+    opacity: 0.6;
+    transform: scale(2);
+}
+
+@keyframes randomMove {
+    0% {
+        background-position: 0 0, 50px 50px, 100px 100px, 150px 150px, 200px 200px;
+    }
+    25% {
+        background-position: 10px 30px, 60px 20px, 120px 80px, 140px 160px, 210px 190px;
+    }
+    50% {
+        background-position: 20px 60px, 70px 90px, 110px 110px, 160px 130px, 230px 150px;
+    }
+    75% {
+        background-position: 30px 90px, 80px 40px, 140px 120px, 180px 140px, 250px 170px;
+    }
+    100% {
+        background-position: 0 0, 50px 50px, 100px 100px, 150px 150px, 200px 200px;
+    }
+}
+
+
 div{
   // border: 2px solid red;
 }
@@ -141,7 +187,7 @@ div{
         }
         
         .bg-border-dw{
-          border: 4px solid #000000;
+          border: 4px solid red;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -160,7 +206,7 @@ div{
         }
         .bg-border-up{
             
-          border: 4px solid #000000;
+          border: 4px solid blue;
           position: absolute;
           top: 50%;
           left: 50%;
