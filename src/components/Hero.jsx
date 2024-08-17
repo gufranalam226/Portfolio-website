@@ -73,7 +73,7 @@ const Component = styled.div`
                      
                       radial-gradient(circle at 110px 220px, green 12px, transparent 0);
     background-size: 500px 300px;
-    animation: moveDots 30s linear infinite;
+    animation: randomMove 20s linear infinite;
 }
 
 .dot-background::after {
@@ -214,11 +214,7 @@ div{
           border-top-left-radius: 20px;
         }
       }
-         
-          
-          
-          
-          
+     
     }
   }
           
