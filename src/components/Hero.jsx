@@ -72,8 +72,8 @@ const Component = styled.div`
                       radial-gradient(circle at 110px 140px, blue 7px, transparent 0),
                      
                       radial-gradient(circle at 110px 220px, green 12px, transparent 0);
-    background-size: 500px 300px;
-    animation: randomMove 20s linear infinite;
+                      background-size: 500px 800px;
+                      animation: randomMove 20s linear infinite;
 }
 
 .dot-background::after {
