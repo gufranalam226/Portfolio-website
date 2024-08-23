@@ -68,7 +68,7 @@ const Component = styled.div`
     padding: 15px; 
     }
 
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
     font-size: 1.1rem;
 

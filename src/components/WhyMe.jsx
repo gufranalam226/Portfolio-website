@@ -31,7 +31,7 @@ whyme{
 }
 
 .whyme{
-  max-width: 1280px;
+  max-width: 1440px;
   margin : auto;
   padding: 50px; 
 }

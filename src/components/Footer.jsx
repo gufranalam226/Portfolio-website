@@ -30,7 +30,7 @@ const Component = styled.div`
   font-size: 1.1rem;
 
   .footer{
-    max-width: 1280px;
+    max-width: 1440px;
     border-top: 1px solid grey;
     margin: auto;
     display: flex;

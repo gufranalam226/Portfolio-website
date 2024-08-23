@@ -10,6 +10,15 @@ import mongodb from "../assets/mongodb.svg"
 import cpp from "../assets/cpp.svg"
 
 
+import aws from "../assets/aws.svg"
+import docker from "../assets/docker.svg"
+import firebase from "../assets/firebase.svg"
+import googlecloud from "../assets/googlecloud.svg"
+import netlify from "../assets/netlify.svg"
+import vercel from "../assets/vercel.svg"
+
+
+
 function Skils() {
   return (
     <Container>
@@ -30,14 +39,14 @@ function Skils() {
             <div className='middle'></div>
             
             <div className="tool-icon skill-icon">
-            <div className='skl-icon'><img src={node} alt="node" />Node.js</div>
-              <div className='skl-icon'><img src={mongodb} alt="mongodb" />MongoDB</div>
-              <div className='skl-icon'><img src={express} alt="express" />Express.js</div>
-              <div className='skl-icon'><img src={html} alt="html" />HTML</div>
-              <div className='skl-icon'><img src={javascript} alt="javascript" />Javascript</div>
-              <div className='skl-icon'><img src={css} alt="css" />CSS3</div>
+            <div className='skl-icon'><img src={aws} alt="node" />AWS</div>
+              <div className='skl-icon'><img src={docker} alt="mongodb" />Docker</div>
+              <div className='skl-icon'><img src={firebase} alt="express" />Firebase</div>
+              <div className='skl-icon'><img src={googlecloud} alt="html" />G-Cloud</div>
+              <div className='skl-icon'><img src={netlify} alt="javascript" />Netlify</div>
+              <div className='skl-icon'><img src={vercel} alt="css" />Vercel</div>
               <div className='skl-icon'><img src={react} alt="react" />React.js</div>
-              <div className='skl-icon'><img src={cpp} alt="cpp" />c/c++</div>
+              <div className='skl-icon'><img src={cpp} alt="cpp" />c/c++</div>  
              
             </div>
 
@@ -58,7 +67,7 @@ skill-area{
 }
 
 .skills{
-  max-width: 1280px;
+  max-width: 1440px;
   margin : auto;
   padding: 50px; 
 }

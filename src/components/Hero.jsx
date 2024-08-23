@@ -110,7 +110,7 @@ div{
 
   .hero{
     height: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
 
